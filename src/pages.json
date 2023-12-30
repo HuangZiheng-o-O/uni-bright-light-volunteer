@@ -1,0 +1,113 @@
+{
+	"easycom": {
+		// 注意一定要放在custom里，否则无效，https://ask.dcloud.net.cn/question/131175
+		"custom": {
+			"^u--(.*)": "uview-plus/components/u-$1/u-$1.vue",
+			"^up-(.*)": "uview-plus/components/u-$1/u-$1.vue",
+			"^u-([^-].*)": "uview-plus/components/u-$1/u-$1.vue",
+			"^iui-(.*)": "iui-design/components/iui-$1/iui-$1.vue"
+		}
+	},
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"name": "home",
+			"style": {
+				"navigationBarTitleText": "审核"
+			}
+		},
+		{
+			"path": "pages/my/my",
+			"name": "my",
+			"style": {
+				"navigationBarTitleText": "个人中心"
+			}
+		},
+		{
+			"path": "pages/chat/chat",
+			"name": "chat",
+			"style": {
+				"navigationBarTitleText": "聊天"
+			}
+		},
+		{
+			"path": "pages/chatroom/chatroom",
+			"name": "chatroom",
+			"style": {
+				"navigationBarTitleText": "聊天室"
+			}
+		},
+		{
+			"path": "pages/statistic/rankingList",
+			"name": "rankingList",
+			"style": {
+				"navigationBarTitleText": "情况统计"
+			}
+		},
+		{
+			"path": "pages/statistic/creditRanking",
+			"name": "creditRanking",
+			"style": {
+				"navigationBarTitleText": "积分排行榜"
+			}
+		},
+		{
+			"path": "pages/examine/examineItems",
+			"name": "examineItems",
+			"style": {
+				"navigationBarTitleText": "审核物品"
+			}
+		},
+		{
+			"path": "pages/examine/examineMission",
+			"name": "examineMission",
+			"style": {
+				"navigationBarTitleText": "批改界面"
+			}
+		},
+		{
+			"path": "pages/feedback/feedback",
+			"name": "feedback",
+			"style": {
+				"navigationBarTitleText": "意见反馈"
+			}
+		},
+		{
+			"path": "pages/childSituation/mission",
+			"name": "mission",
+			"style": {
+				"navigationBarTitleText": "儿童任务情况"
+			}
+		}
+	],
+	"tabBar": {
+		"color": "#999",
+		"selectedColor": "#0aa671",
+		"borderStyle": "white",
+		"backgroundColor": "#ffffff",
+		"list": [
+			{
+				"pagePath": "pages/index/index",
+				"text": "主页"
+			},
+			{
+				"pagePath": "pages/my/my",
+				"text": "我的"
+			},
+			{
+				"pagePath": "pages/chat/chat",
+				"text": "聊天"
+			}
+		]
+	},
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8",
+		"app-plus": {
+			"animationType": "fade-in",
+			"animationDuration": "300"
+		}
+	}
+}
